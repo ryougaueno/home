@@ -1,4 +1,6 @@
+<?php
 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,15 +15,17 @@
 <body>
     <!-- header -->
     <header>
-    aA
+        <div class=wrapper>
+            <h1>タイトル</h1>
+        </div>
+        <div class="create">
+            <a href="edit.php"><img src="img/プラスマークアイコン 2.png" alt=""></a>
+        </div>
     </header>
     <!-- main -->
     <main>
 
     </main>
-<!-- footer -->
-    <footer>
 
-    </footer>
 </body>
 </html>
