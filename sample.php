@@ -5,7 +5,8 @@ $todo = new Task();
 //  var_dump($todo);die;
 
  $tasks = $todo->getAll();
-
+//  echo '<pre>';
+// var_dump($tasks);die;
 ?>
 
 <!DOCTYPE html>
@@ -37,11 +38,11 @@ $todo = new Task();
                 <div class="content">
                     <h5 class="content-title">
                         <!-- ここにタイトルよびだし -->
-                        <?= h($task["view-title"]); ?>
+                        <?= h($task["title"]); ?>
                     </h5>
                     <p class="content-text">
                         <!-- ここにテキスト呼び出し -->
-                        <?= h($task["view-content"]); ?>
+                        <?= h($task["contents"]); ?>
                     </p>
                 </div>
                 <!-- ?>ここまでfor each -->
