@@ -45,6 +45,12 @@ $todo = new Task();
                         <?= h($task["contents"]); ?>
                     </p>
                 </div>
+                <div>
+                    <form action="delete.php" method="post">
+                        <input type="hidden" name="id" value="<?= h($task['id']);?>">
+                        <button type="submit" class="btn text-danger">DELETE</button>
+                    </form>
+                </div>
                 <!-- ?>ここまでfor each -->
             <?php endforeach; ?>
         </div>
