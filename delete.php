@@ -10,7 +10,7 @@ $id = $_POST['id'];
 $task = new Task();
 $task->delete([$id]);
 
-// リダイレクト
+// リダイレクト・
 header("location: sample.php");
 exit;
 
