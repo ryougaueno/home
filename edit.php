@@ -15,7 +15,7 @@
 
 </head>
 <body>
-    <form action="update.php" method="post">
+    <form action="store.php" method="post">
         <h1>タイトル</h1>
         <div class="box1">
             <div class="title-box1">title</div>
