@@ -16,7 +16,7 @@ $todo = new Task();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Document</title>
+    <title>さんちゃんねるへようこそ</title>
     <link type="text/css" rel="stylesheet" href="main.css" >
     
 </head>
@@ -49,29 +49,21 @@ $todo = new Task();
                         </p>
                     </div>
                     <div class="delete">
-                    <a href="edit2.php?id=<?= h($task['id']); ?>" class="text-success">EDIT</a>
+                    <a href="edit2.php?id=<?= h($task['id']); ?>" class="text-success"><p>編集</p> </a>
                         <form  action="delete.php" method="post">
                             <input type="hidden" name="id" value="<?= h($task['id']);?>">
-                            <button type="submit" class="btn text-danger">DELETE</button>
+                            <button type="submit" class="button">削除</button>
                         </form>
                     </div>
                 </div>
-                   
-                <div>
-                    
-
-                </div>
                 <!-- ?>ここまでfor each -->
             <?php endforeach; ?>
-       
-
     </main>
+    <!-- footer -->
     <footer>
         <div class="footer-box">
                 <p>copyright©Nexceed.All right reserved.</p>
         </div>
     </footer>
-   
-
 </body>
 </html>

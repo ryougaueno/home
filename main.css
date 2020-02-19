@@ -3,6 +3,31 @@
     margin: 0;
     font-family: 'Vollkorn', serif;
 }
+/* ぼたん */
+/* 削除ボタン */
+.button {
+    position: relative;
+    border: 2px solid #111;
+    width: 100px;
+    height: 40px;
+    color: red;
+    /* border-bottom:solid 1px red; */
+  }
+  .button:hover {
+    color: #666;
+  }
+  /* 編集ボタン */
+.text-success{
+    margin-right: 10px;
+  width: 100px;
+  height: 36px;
+  border: 2px solid #111;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+/* headeer */
+
 header{
     height:100px;
     background-color:black;
@@ -31,6 +56,7 @@ header{
 .create{
     margin-right: 100px;
 }
+
 /* content */
 
 .content{
@@ -56,15 +82,9 @@ font-size: 2em;
 .delete del{
     margin-left: 10px;
 }
-.delete button:hover{
-    opacity: 0.1;
-    background-color: black;
-}
-.text-success{
-    margin-right: 10px;
-}
 
 
+/* footer */
 .footer-box{
     display: flex;
     justify-content: center;
