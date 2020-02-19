@@ -16,11 +16,18 @@
 </head>
 <body>
     <h1>タイトル</h1>
-    <div>title</div>
-    <input type="text" name="view-title">
-    <div>content</div>
-    <input type="text" name="view-content">
+    <div class="box1">
+        <div class="title-box1">title</div>
+        <input class="title-box2" type="text" name="view-title">
+    </div>
+    <div class="box2">
+        <div class="content-box1">content</div>
+        <input class="content-box2" type="text" name="view-content">
+    </div>
     <br>
-    <input type="submit" value="投稿">
+    <div class="button">
+        <input class="button1" type="submit" value="投稿">
+    </div>
+    
 </body>
 </html>
