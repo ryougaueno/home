@@ -3,6 +3,9 @@
     margin: 0;
     font-family: 'Vollkorn', serif;
 }
+main{
+    padding: 5px 10px;
+}
 /* ぼたん */
 /* 削除ボタン */
 .button {
@@ -88,7 +91,15 @@ font-size: 2em;
 .delete del{
     margin-right: 10px;
 }
+/* コメントフォーム */
+.comment-content{
+    font-size: 1.3em;
+}
+.comment-box{
+    width:500px ;
+    height: 150px;
 
+}
 
 /* footer */
 .footer-box{

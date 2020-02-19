@@ -56,6 +56,25 @@ $todo = new Task();
                             </form>
                         </div>
                      </div>
+                     <!-- comment -->
+                     <div class="comment-content">
+                        <form action="" method="post">
+            
+                            <div class="box1">
+                                <p>＊名前</p>
+                                <textarea class="name-box" type="text" id="name" name="name"></textarea>
+                            </div>
+                            <div class="box2">
+                                <p>＊こめんと</p>
+                                <textarea class="comment-box" type="text"id="comment" name="comment"></textarea>
+                            </div>
+                            <br>
+                            <div class="comment-button">
+                                <input type="hidden" name="id" >
+                                <button type="submit" class="btn btn-primary">とうこう</button>
+                            </div>
+                        </form>
+                     </div>
                 <!-- ?>ここまでfor each -->
             <?php endforeach; ?>
     </main>
