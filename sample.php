@@ -49,13 +49,13 @@ $todo = new Task();
                         </p>
                     </div>
                     <div class="delete">
-                    <a href="edit2.php?id=<?= h($task['id']); ?>" class="text-success"><p>編集</p> </a>
-                        <form  action="delete.php" method="post">
-                            <input type="hidden" name="id" value="<?= h($task['id']);?>">
-                            <button type="submit" class="button">削除</button>
-                        </form>
-                    </div>
-                </div>
+                        <a href="edit2.php?id=<?= h($task['id']); ?>" class="text-success"><p>編集</p> </a>
+                            <form  action="delete.php" method="post">
+                                <input type="hidden" name="id" value="<?= h($task['id']);?>">
+                                <button type="submit" class="button">削除</button>
+                            </form>
+                        </div>
+                     </div>
                 <!-- ?>ここまでfor each -->
             <?php endforeach; ?>
     </main>
