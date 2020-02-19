@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/earlyaccess/hannari.css');
+*{
+    margin: 0;
+    font-family: Hannari;
+}
+h1{
+    font-size: 5em;
+}
+
+
+/* header */
+
+header{
+   
+    width: 100%;
+    background-image:  linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url(../img/DSC_0219.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color :white;
+    background-attachment: fixed;
+}
+
+
+.header-item{
+    position: relative;
+    padding:  50px 50px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5em;
+}
+
+.header-item a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.header-item a:hover{
+    background-color: black;
+    opacity: 0.2;
+}
+.header-wrapper{
+    display: colum;
+    justify-content: center;
+    padding-top: 100px;
+    align-items: center;
+    height:670px;
+    padding-left: 200px;
+}
+.wrapper-text{
+    font-size: 1.3em;
+}
+
+
+
+
+
+/* footer */
+footer{
+    background-color: black;
+    height: 100px;
+    color: rgb(202, 202, 202);
+   
+}
+
+.footer-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-item{
+    padding: 5px 40px;
+    position: relative;
+}
+
+
+.footer-item a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.footer-item a:hover{
+    background-color: black;
+    opacity: 0.2;
+}
+.footer-box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100px;
+    color: rgb(202, 202, 202);
+}

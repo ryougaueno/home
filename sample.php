@@ -24,7 +24,8 @@ $todo = new Task();
     <!-- header -->
     <header>
         <div class=wrapper>
-            <h1>タイトル</h1>
+            <h1>さんちゃんねる</h1>
+            <a href="top.html/top.php"></a>
         </div>
         <div class="create">
             <a href="edit.php"><img src="img/プラスマークアイコン 2.png" alt=""></a>
