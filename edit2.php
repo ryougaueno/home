@@ -26,11 +26,11 @@
         <h1>タイトル</h1>
         <div class="box1">
             <div class="title-box1">title</div>
-            <input class="title-box2" type="text" id="title" name="view-title">
+            <textarea class="title-box2" type="text" id="title" name="view-title"></textarea>
         </div>
         <div class="box2">
             <div class="content-box1">content</div>
-            <input class="content-box2" type="text"id="content" name="view-content">
+            <textarea class="content-box2" type="text"id="content" name="view-content"></textarea>
         </div>
         <br>
         <div class="button">
