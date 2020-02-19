@@ -1,4 +1,5 @@
 <?php
+
 require_once('function.php');
 require_once('Models/Task.php');
 $todo = new Task();
@@ -53,6 +54,11 @@ $todo = new Task();
                             <button type="submit" class="btn text-danger">DELETE</button>
                         </form>
                     </div>
+                </div>
+                    <a href="edit2.php?id=<?= h($task['id']); ?>" class="btn text-success">EDIT</a>
+                <div>
+                    
+
                 </div>
                 <!-- ?>ここまでfor each -->
             <?php endforeach; ?>
