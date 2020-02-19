@@ -48,14 +48,14 @@ $todo = new Task();
                         </p>
                     </div>
                     <div class="delete">
-                        <a href="  ?id=<?= h($task['id']); ?>" class="edit">EDIT</a>
+                    <a href="edit2.php?id=<?= h($task['id']); ?>" class="text-success">EDIT</a>
                         <form  action="delete.php" method="post">
                             <input type="hidden" name="id" value="<?= h($task['id']);?>">
                             <button type="submit" class="btn text-danger">DELETE</button>
                         </form>
                     </div>
                 </div>
-                    <a href="edit2.php?id=<?= h($task['id']); ?>" class="btn text-success">EDIT</a>
+                   
                 <div>
                     
 
