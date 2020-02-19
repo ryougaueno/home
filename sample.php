@@ -1,5 +1,6 @@
 <?php
 
+
 ?>
 
 <!DOCTYPE html>
@@ -22,19 +23,24 @@
             <a href="edit.php"><img src="img/プラスマークアイコン 2.png" alt=""></a>
         </div>
     </header>
-    <!-- main -->
+
+    <!-- main ここから-->
     <main>
         <div class="contents-box">
             <!-- for each -->
-             <div class="content">
-                <h5 class="content-title">
-                    <!-- ここにタイトルよびだし -->
-                </h5>
-                <p class="content-text">
-                    <!-- ここにテキスト呼び出し -->
-                </p>
-            </div>
-             <!-- ?> -->
+            <?php foreach ($tasks as $task) : ?>
+                <div class="content">
+                    <h5 class="content-title">
+                        <!-- ここにタイトルよびだし -->
+                        <?= h($task["title"]); ?>
+                    </h5>
+                    <p class="content-text">
+                        <!-- ここにテキスト呼び出し -->
+                        <?= h($task["contents"]); ?>
+                    </p>
+                </div>
+                <!-- ?>ここまでfor each -->
+            <?php endforeach; ?>
         </div>
 
     </main>
