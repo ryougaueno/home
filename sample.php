@@ -37,11 +37,11 @@ $todo = new Task();
                 <div class="content">
                     <h5 class="content-title">
                         <!-- ここにタイトルよびだし -->
-                        <?= h($task["title"]); ?>
+                        <?= h($task["view-title"]); ?>
                     </h5>
                     <p class="content-text">
                         <!-- ここにテキスト呼び出し -->
-                        <?= h($task["contents"]); ?>
+                        <?= h($task["view-contents"]); ?>
                     </p>
                 </div>
                 <!-- ?>ここまでfor each -->
