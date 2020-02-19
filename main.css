@@ -1,6 +1,7 @@
 
 *{
     margin: 0;
+    font-family: 'Vollkorn', serif;
 }
 header{
     height:100px;
@@ -19,14 +20,44 @@ header{
     margin-right: 100px;
 }
 /* content */
+.contents-box{
+   /* display: flex; */
 
+}
 .content{
     border: solid 3px rgb(190, 190, 190);
     margin: 10px 5px;
+
 }
 .content-title{
 font-size: 2em;
 }
 .content-text{
     font-size: 1.5em;
+}
+.delete{
+    margin: 3px 10px;
+    display: flex;
+    justify-content: left;
+}
+.delete del{
+    margin-left: 10px;
+}
+.delete button:hover{
+    opacity: 0.1;
+    background-color: black;
+}
+.edit{
+    margin-right: 10px;
+}
+
+
+.footer-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100px;
+    color: rgb(202, 202, 202);
+   
 }

@@ -32,30 +32,39 @@ $todo = new Task();
 
     <!-- main ここから-->
     <main>
-        <div class="contents-box">
+       
             <!-- for each -->
             <?php foreach ($tasks as $task) : ?>
-                <div class="content">
-                    <h5 class="content-title">
-                        <!-- ここにタイトルよびだし -->
-                        <?= h($task["title"]); ?>
-                    </h5>
-                    <p class="content-text">
-                        <!-- ここにテキスト呼び出し -->
-                        <?= h($task["contents"]); ?>
-                    </p>
-                </div>
-                <div>
-                    <form action="delete.php" method="post">
-                        <input type="hidden" name="id" value="<?= h($task['id']);?>">
-                        <button type="submit" class="btn text-danger">DELETE</button>
-                    </form>
+                <div class="contents-box">
+                    <div class="content">
+                        <h5 class="content-title">
+                            <!-- ここにタイトルよびだし -->
+                            <?= h($task["title"]); ?>
+                        </h5>
+                        <p class="content-text">
+                            <!-- ここにテキスト呼び出し -->
+                            <?= h($task["contents"]); ?>
+                        </p>
+                    </div>
+                    <div class="delete">
+                        <a href="  ?id=<?= h($task['id']); ?>" class="edit">EDIT</a>
+                        <form  action="delete.php" method="post">
+                            <input type="hidden" name="id" value="<?= h($task['id']);?>">
+                            <button type="submit" class="btn text-danger">DELETE</button>
+                        </form>
+                    </div>
                 </div>
                 <!-- ?>ここまでfor each -->
             <?php endforeach; ?>
-        </div>
+       
 
     </main>
+    <footer>
+        <div class="footer-box">
+                <p>copyright©Nexceed.All right reserved.</p>
+        </div>
+    </footer>
+   
 
 </body>
 </html>
