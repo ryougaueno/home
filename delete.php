@@ -1,15 +1,16 @@
 <?php
 
-// 読み込み
-require_once('dbconnect.php');
-require_once('function.php');
+// ファイルの読み込み
+require_once('Models/Task.php');
 
-// 受け取り
+// データの受け取り
 $id = $_POST['id'];
 
-// DBから削除
-$stmt = $dbh->prepare('DELETE FROM tasks WHERE id = ?');
-$stmt->execute([$id]);
+// DBからデータの削除
+$task = new Task();
+$task->delete([$id]);
 
-// re
+// リダイレクト
 header("location: sample.php");
+exit;
+
