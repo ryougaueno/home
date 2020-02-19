@@ -41,7 +41,7 @@ $todo = new Task();
                     </h5>
                     <p class="content-text">
                         <!-- ここにテキスト呼び出し -->
-                        <?= h($task["view-contents"]); ?>
+                        <?= h($task["view-content"]); ?>
                     </p>
                 </div>
                 <!-- ?>ここまでfor each -->
