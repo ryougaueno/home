@@ -1,5 +1,10 @@
 <?php
 
+require_once('Models/Task.php');
+$todo = new Task();
+//  var_dump($todo);die;
+
+ $tasks = $todo->getAll();
 
 ?>
 
