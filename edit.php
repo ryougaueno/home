@@ -23,7 +23,7 @@
         </div>
         <div class="box2">
             <div class="content-box1">content</div>
-            <textarea  class="content-box2" type="text"id="content" name="view-content"></textarea >
+            <textarea  class="content-box2" type="text"id="content" name="view-content"></textarea>
         </div>
         <br>
         <div class="button">

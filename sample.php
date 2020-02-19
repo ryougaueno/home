@@ -18,7 +18,7 @@ $todo = new Task();
     
     <title>さんちゃんねるへようこそ</title>
     <link type="text/css" rel="stylesheet" href="main.css" >
-    
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->    
 </head>
 <body>
     <!-- header -->
@@ -34,7 +34,9 @@ $todo = new Task();
 
     <!-- main ここから-->
     <main>
-       
+         <div id="viewTime">
+             <script src="js/app.js"></script>
+         </div>
             <!-- for each -->
             <?php foreach ($tasks as $task) : ?>
                 <div class="contents-box">
