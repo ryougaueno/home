@@ -16,14 +16,19 @@
 </head>
 <body>
     <form action="store.php" method="post">
-        <h1>タイトル</h1>
+        <h1>さんちゃんねる</h1>
         <div class="box1">
-            <div class="title-box1">title</div>
+            <div class="title-box1">題</div>
             <textarea  class="title-box2" type="text" id="title" name="view-title"></textarea>
         </div>
         <div class="box2">
+<<<<<<< HEAD
             <div class="content-box1">content</div>
             <textarea  class="content-box2" type="text"id="content" name="view-content"></textarea>
+=======
+            <div class="content-box1">中身</div>
+            <textarea  class="content-box2" type="text"id="content" name="view-content"></textarea >
+>>>>>>> master
         </div>
         <br>
         <div class="button">

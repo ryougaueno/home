@@ -19,11 +19,6 @@ $task = (new Task())->get($id);
 // $comment =(new Comment())->get($id);
 
 
-$comments = [
-    ['name' => 'ryoga', 'body' => 'boxsing', 'thread_id' => 1],
-    ['name' => 'yusuke', 'body' => 'boxsing', 'thread_id' => 1],
-    ['name' => 'atushi', 'body' => 'boxsing', 'thread_id' => 1],
-];
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +37,9 @@ $comments = [
         <div class=wrapper>
             <h1>さんちゃんねる</h1>
             <a href="top.html/top.php"></a>
+            <p>スレッドの投稿はあちらから！＝＝＞＞</p>
         </div>
+       
         <div class="create">
             <a href="edit.php"><img src="img/プラスマークアイコン 2.png" alt=""></a>
         </div>
@@ -80,16 +77,45 @@ $comments = [
             
                             <div class="box1">
                                 <p>＊名前</p>
-                                <textarea class="name-box" type="text" id="name" name="name"></textarea>
+                                <div class="box">
+                                 <textarea class="name-box" type="text" id="name" name="name"></textarea>
+                                    <div><br>
+                                            　 |■|<br>
+                                    　　　　 　|　 |<br>
+                                    　　　　／　　＼<br>
+                                    　　 　 |＿＿＿|<br>
+                                    　　 .　　　∧∧|<br>
+                                    　　・∀・|(*ﾟーﾟ) ＿_ <br>
+                                    ／|￣￣￣￣￣|＼ ＼<br>
+                                    ￣|　 みかん..　|　 |￣<br>
+                                    　 |＿＿＿＿＿|＿|<br>
+                                            </div><br>
+                                        <div><br><br>
+                                        　　　　 　ｒ ⌒ヽ<br>
+                                        　　　　　(´ ⌒｀)　ﾎﾟｯﾎﾟｰ !ｂ         <br>
+                                        　　 　 　 　 l l  <br>
+                                        　ｶﾀｶﾀ　∧＿∧　　／￣￣￣￣￣￣￣￣￣￣<br>
+                                        　　　　 （・∀・＃）＜　おつかれさまでした！<br>
+                                        　　 ＿|￣￣||＿）＿＼＿＿＿＿＿＿＿＿＿＿<br>
+                                        　／旦|――||/／ ／|<br>
+                                        　|￣￣￣￣￣|￣| . |<br>
+                                        　|＿＿＿＿＿|三|／<br>
+
+
+                                        </div>
+                                </div>
                             </div>
                             <div class="box2">
                                 <p>＊こめんと</p>
-                                <textarea class="comment-box" type="text"id="comment" name="comment"></textarea>
+                                    <textarea class="comment-box" type="text"id="comment" name="comment"></textarea>
+                                     
+                                
                             </div>
                             <br>
                             <div class="comment-button">
                                 <input type="hidden" name="id"id="comments" value="<?= h($task['id']); ?>">
-                                <button type="submit" class="btn btn-primary">とうこう</button>
+                                <button type="submit" class="c-button">とうこう</button>
+
                             </div>
                         </form>
                      </div>

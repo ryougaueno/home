@@ -10,11 +10,30 @@ main{
 /* 削除ボタン */
 .button {
     position: relative;
-    border: 2px solid #111;
-    width: 100px;
-    height: 40px;
-    color: red;
-    /* border-bottom:solid 1px red; */
+    display: inline-block;
+    margin: 1.5em 0 1.5em 15px;
+    padding: 0 5px;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    background: #fd4d4d;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+  
+  .button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #fd4343;
+    z-index: 0;
   }
   .button:hover {
     color: #666;
@@ -23,12 +42,41 @@ main{
 .text-success{
     margin-right: 10px;
   width: 100px;
-  height: 36px;
-  border: 2px solid #111;
  display: flex;
  justify-content: center;
  align-items: center;
+ /*  */
+ position: relative;
+ display: inline-block;
+ margin: 1.5em 0 1.5em 15px;
+ padding: 0 5px;
+ width: 90px;
+ height: 90px;
+ line-height: 90px;
+ text-align: center;
+ color: #FFF;
+ font-size: 20px;
+ font-weight: bold;
+ background: #24f558;
+ border-radius: 50%;
+ box-sizing: border-box;
+ text-decoration: none
 }
+
+.text-success:before {
+ content: "";
+ position: absolute;
+ top: 50%;
+ left: -25px;
+ margin-top: -15px;
+ border: 15px solid transparent;
+ border-right: 15px solid #3bf363;
+ z-index: 0;
+
+}
+.text-success:hover {
+    color: #666;
+  }
 /* headeer */
 
 header{
@@ -63,14 +111,29 @@ header{
 /* content */
 
 .content{
-    padding: 0.5em 1em;
-    margin: 2em 0;
-    color: #474747;
-    background: whitesmoke;/*背景色*/
-    border-left: double 7px #4ec4d3;/*左線*/
-    border-right: double 7px #4ec4d3;/*右線*/
     width: 85%;
+    position: relative;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #e0edff;
+  border-radius: 15px;
 }
+
+.content:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e0edff;
+}
+
 .contents-box{
     display: flex;
 }
@@ -100,7 +163,31 @@ font-size: 2em;
     height: 150px;
 
 }
+.c-button{
+    display: block;
+	position: relative;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #1B1B1B;
+	background: #fff;
+	border:1px solid #1B1B1B;
+}
+.c-button:hover {
+	 background: #1B1B1B;
+         color: #fff;
+	 cursor: pointer;
+	 text-decoration: none;
 
+}
+
+/* nityannAA */
+.box{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
 /* footer */
 .footer-box{
     display: flex;
