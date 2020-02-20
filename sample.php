@@ -5,7 +5,7 @@ require_once('Models/Task.php');
 $todo = new Task();
 //  var_dump($todo);die;
 
- $tasks = $todo->getAll();
+$tasks = $todo->getAll();
 //  echo '<pre>';
 // var_dump($tasks);die;
 
@@ -17,6 +17,10 @@ $id = $_GET['name'] ?? '';
 // DBへのデータ保存
 $task = (new Task())->get($id);
 // $comment =(new Comment())->get($id);
+
+//読み込み
+$comenntall = new Comment();
+$comments = $comenntall->getAll();
 
 
 ?>
@@ -39,7 +43,6 @@ $task = (new Task())->get($id);
             <a href="top.html/top.php"></a>
             <p>スレッドの投稿はあちらから！＝＝＞＞</p>
         </div>
-       
         <div class="create">
             <a href="edit.php"><img src="img/プラスマークアイコン 2.png" alt=""></a>
         </div>
@@ -70,6 +73,30 @@ $task = (new Task())->get($id);
                                 <button type="submit" class="button">削除</button>
                             </form>
                         </div>
+                     </div>
+                     <!--  -->
+                     <?php foreach ($comments as $comenntall) : ?>
+                            <?php
+                            $T = $comenntall["id"];
+                            $F = $task["id"];
+                            if ($T === $F){
+                                    echo ($TF = h($comenntall["title"]));
+                            } else {
+                                echo '';
+                            }
+                            ?>
+                        <br>
+                        <?php
+                            $T = $comenntall["id"];
+                            $F = $task["id"];
+                            if ($T === $F){
+                                    echo ($TF = h($comenntall["contents"]));
+                            } else {
+                                echo '';
+                            }
+                            ?>
+                        <br>
+                     <?php endforeach; ?>
                      </div>
                      <!-- comment -->
                      <div class="comment-content">
