@@ -78,8 +78,8 @@ $task = (new Task())->get($id);
                                 <div class="box">
                                  <textarea class="name-box" type="text" id="name" name="name"></textarea>
                                     <div><br>
-                                            　 |■|<br>
-                                    　　　　 　|　 |<br>
+                                            　 <br>
+                                    　　　　 　|■ |<br>
                                     　　　　／　　＼<br>
                                     　　 　 |＿＿＿|<br>
                                     　　 .　　　∧∧|<br>
@@ -91,8 +91,8 @@ $task = (new Task())->get($id);
                                         <div><br><br>
                                         　　　　 　ｒ ⌒ヽ<br>
                                         　　　　　(´ ⌒｀)　ﾎﾟｯﾎﾟｰ !ｂ         <br>
-                                        　　 　 　 　 l l  <br>
-                                        　ｶﾀｶﾀ　∧＿∧　　／￣￣￣￣￣￣￣￣￣￣<br>
+                                        　　 　 　 　 l l<br>
+                                        　    ｶﾀｶﾀ..　...∧＿∧　／￣￣￣￣￣￣￣￣￣￣<br>
                                         　　　　 （・∀・＃）＜　おつかれさまでした！<br>
                                         　　 ＿|￣￣||＿）＿＼＿＿＿＿＿＿＿＿＿＿<br>
                                         　／旦|――||/／ ／|<br>
