@@ -3,6 +3,9 @@
     margin: 0;
     font-family: 'Vollkorn', serif;
 }
+main{
+    padding: 5px 10px;
+}
 /* ぼたん */
 /* 削除ボタン */
 .button {
@@ -66,7 +69,10 @@ header{
     background: whitesmoke;/*背景色*/
     border-left: double 7px #4ec4d3;/*左線*/
     border-right: double 7px #4ec4d3;/*右線*/
-
+    width: 85%;
+}
+.contents-box{
+    display: flex;
 }
 .content-title{
 font-size: 2em;
@@ -77,12 +83,23 @@ font-size: 2em;
 .delete{
     margin: 3px 10px;
     display: flex;
-    justify-content: left;
+    justify-content: flex-end;
+    align-items: center;
+    /* right: 5px; */
+    /* top:5px; */
 }
 .delete del{
-    margin-left: 10px;
+    margin-right: 10px;
 }
+/* コメントフォーム */
+.comment-content{
+    font-size: 1.3em;
+}
+.comment-box{
+    width:500px ;
+    height: 150px;
 
+}
 
 /* footer */
 .footer-box{
