@@ -45,9 +45,10 @@ class Comment extends Model
 {
 
     // プロパティ
-    protected $comment = 'comment';
+    protected $table = 'comment';
 
-
+    
+    // var_dump($data);die;
     public function create($data)
     {
         // DBに保存
@@ -58,7 +59,7 @@ class Comment extends Model
         // PDOのインスタンス
         // prepareメソッドを実行
         // INSERT INTO (カラム名, ,) VALUES (値, 値, 値,)
-        $stmt = $this->db_manager->dbh->prepare('INSERT INTO ' . $this->table . ' (title, contents, created) VALUES (?, ?, ?)');
+        $stmt = $this->db_manager->dbh->prepare('INSERT INTO ' . $this->table . ' (id,title, contents, created) VALUES (?, ?, ?, ?)');
         $stmt->execute($data);
     }
 

@@ -19,6 +19,8 @@ class Model
 
     public function create($data)
     {
+        
+    
         // DBに保存
         // このクラスのインスタンスの
         // db_managerプロパティの
@@ -27,7 +29,7 @@ class Model
         // PDOのインスタンス
         // prepareメソッドを実行
         // INSERT INTO (カラム名, ,) VALUES (値, 値, 値,)
-        $stmt = $this->db_manager->dbh->prepare('INSERT INTO ' . $this->table . ' (title, contents, created) VALUES (?, ?, ?)');
+        $stmt = $this->db_manager->dbh->prepare('INSERT INTO ' . $this->table . ' (id,title, contents, created) VALUES (?, ?, ?, ?)');
         $stmt->execute($data);
     }
 
@@ -63,12 +65,13 @@ class Model
     public function get($id)
     {
         // $idと一致するidをもつレコードを取得する
-
+        // var_dump($id);die;
         // 準備する
+        // var_dump($this->table);die;
         $stmt = $this->db_manager->dbh->prepare('SELECT * FROM ' . $this->table . ' WHERE id = ?');
-
+        
         // 実行する
-        $stmt->execute([$id]);
+        $stmt->execute([3]);
 
         // 実行結果を変数に代入する
         $task = $stmt->fetch();
