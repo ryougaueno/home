@@ -23,13 +23,13 @@
 </head>
 <body>
     <form action="update.php" method="post">
-        <h1>タイトル</h1>
+        <h1>さんちゃんねる</h1>
         <div class="box1">
-            <div class="title-box1">title</div>
+            <div class="title-box1">題</div>
             <textarea class="title-box2" type="text" id="title" name="view-title"></textarea>
         </div>
         <div class="box2">
-            <div class="content-box1">content</div>
+            <div class="content-box1">中身</div>
             <textarea class="content-box2" type="text"id="content" name="view-content"></textarea>
         </div>
         <br>
