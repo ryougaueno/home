@@ -8,6 +8,12 @@ $todo = new Task();
  $tasks = $todo->getAll();
 //  echo '<pre>';
 // var_dump($tasks);die;
+
+$comments = [
+    ['name' => 'ryoga', 'body' => 'boxsing', 'thread_id' => 1],
+    ['name' => 'yusuke', 'body' => 'boxsing', 'thread_id' => 1],
+    ['name' => 'atushi', 'body' => 'boxsing', 'thread_id' => 1],
+];
 ?>
 
 <!DOCTYPE html>
