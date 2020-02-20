@@ -50,7 +50,9 @@ $comments = $comenntall->getAll();
 
     <!-- main ここから-->
     <main>
-       
+          <div id="viewTime">
+             <script src="js/app.js"></script>
+         </div> 
             <!-- for each -->
             <?php foreach ($tasks as $task) : ?>
                 <div class="contents-box">
