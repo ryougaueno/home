@@ -49,7 +49,7 @@ $comments = $comenntall->getAll();
     <!-- main ここから-->
     <main>
           <div id="viewTime">
-             <script src="js/app.js"></script>
+             <p><script src="top.html/app.js"></script></p>
          </div> 
             <!-- for each -->
             <?php foreach ($tasks as $task) : ?>
@@ -75,27 +75,25 @@ $comments = $comenntall->getAll();
                      <!--  -->
                      <div class="comment-all">
                         <?php foreach ($comments as $comenntall) : ?>
-                                <?php
-                                $T = $comenntall["id"];
-                                $F = $task["id"];
-                                if ($T === $F){
-                                        echo ($TF = h($comenntall["title"]));
-                                } else {
-                                    echo '';
-                                }
-                                ?>
+                            
                             <?php
-                                $T = $comenntall["id"];
-                                $F = $task["id"];
-                                if ($T === $F){
-                                        echo ($TF = h($comenntall["contents"]));
-                                } else {
+                            $T = $comenntall["id"];
+                            $F = $task["id"];
+                            if ($T === $F){
                                     echo '';
-                                }
-                                ?>
-                            <br>
-                        <?php endforeach; ?>
-                     </div>
+                                    echo ($TF = h($comenntall["title"]));
+                                    echo 'さん: ';
+                                    echo ($TF = h($comenntall["contents"]));
+                            } else {
+                                echo '';
+                            }
+                            ?>
+                        
+                        <?php
+          
+                            ?>
+                        <br>
+                     <?php endforeach; ?>
                      </div>
                      <!-- comment -->
                      <div class="comment-content">
