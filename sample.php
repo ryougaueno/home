@@ -2,8 +2,9 @@
 
 require_once('function.php');
 require_once('Models/Task.php');
+require_once('dbconnect.php');
 $todo = new Task();
-//  var_dump($todo);die;
+
 
 $tasks = $todo->getAll();
 //  echo '<pre>';
@@ -11,12 +12,9 @@ $tasks = $todo->getAll();
 
 // ここからComment
 // データの受け取り
-
 $id = $_GET['name'] ?? '';
-  
 // DBへのデータ保存
 $task = (new Task())->get($id);
-// $comment =(new Comment())->get($id);
 
 //読み込み
 $comenntall = new Comment();

@@ -65,7 +65,7 @@ class Model
     public function get($id)
     {
         // $idと一致するidをもつレコードを取得する
-        // var_dump($id);die;
+        // var_dump($id);die;00
         // 準備する
         // var_dump($this->table);die;
         $stmt = $this->db_manager->dbh->prepare('SELECT * FROM ' . $this->table . ' WHERE id = ?');
