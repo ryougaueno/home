@@ -2,22 +2,22 @@
 
 require_once('function.php');
 require_once('Models/Task.php');
+require_once('dbconnect.php');
 $todo = new Task();
-//  var_dump($todo);die;
+
 
  $tasks = $todo->getAll();
-//  echo '<pre>';
-// var_dump($tasks);die;
 
 // ここからComment
 // データの受け取り
-
 $id = $_GET['name'] ?? '';
-  
 // DBへのデータ保存
 $task = (new Task())->get($id);
-// $comment =(new Comment())->get($id);
 
+$commentall=new Comment();
+$comments = $commentall->getall();
+// $sql= "SELECT * FROM comment";
+// $stmt = $dbh->query($sql);
 
 ?>
 
@@ -69,6 +69,15 @@ $task = (new Task())->get($id);
                             </form>
                         </div>
                      </div>
+                     <!-- kokoni※表示 -->
+                    <?php foreach ($comments as $comment) :?>
+                        
+                        <!-- SELECT * FROM Comment WHERE id=23 -->
+                        <div> <?= h($comment["title"]); ?>さん:: <?= h($comment["contents"]); ?></div>
+   
+                      
+                    <?php endforeach; ?>
+                
                      <!-- comment -->
                      <div class="comment-content">
                         <form action="comment-store.php" method="post">

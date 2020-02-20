@@ -34,7 +34,7 @@
         </div>
         <br>
         <div class="button">
-            <input type="hidden" name="id" value="<?= h($task['id']); ?>">
+            <input type="hidden" name="button" value="<?= h($task['id']); ?>">
             <div class="d-flex justify-content-end">
             <button type="submit" class="btn btn-primary">UPDATE</button>
         </div>
