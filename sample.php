@@ -37,7 +37,9 @@ $task = (new Task())->get($id);
         <div class=wrapper>
             <h1>さんちゃんねる</h1>
             <a href="top.html/top.php"></a>
+            <p>スレッドの投稿はあちらから！＝＝＞＞</p>
         </div>
+       
         <div class="create">
             <a href="edit.php"><img src="img/プラスマークアイコン 2.png" alt=""></a>
         </div>
