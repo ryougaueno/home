@@ -6,7 +6,9 @@ require_once('dbconnect.php');
 $todo = new Task();
 
 
- $tasks = $todo->getAll();
+$tasks = $todo->getAll();
+//  echo '<pre>';
+// var_dump($tasks);die;
 
 // ここからComment
 // データの受け取り
@@ -14,10 +16,10 @@ $id = $_GET['name'] ?? '';
 // DBへのデータ保存
 $task = (new Task())->get($id);
 
-$commentall=new Comment();
-$comments = $commentall->getall();
-// $sql= "SELECT * FROM comment";
-// $stmt = $dbh->query($sql);
+//読み込み
+$comenntall = new Comment();
+$comments = $comenntall->getAll();
+
 
 ?>
 
@@ -39,7 +41,6 @@ $comments = $commentall->getall();
             <a href="top.html/top.php"></a>
             <p>スレッドの投稿はあちらから！＝＝＞＞</p>
         </div>
-       
         <div class="create">
             <a href="edit.php"><img src="img/プラスマークアイコン 2.png" alt=""></a>
         </div>
@@ -47,7 +48,9 @@ $comments = $commentall->getall();
 
     <!-- main ここから-->
     <main>
-       
+          <div id="viewTime">
+             <script src="js/app.js"></script>
+         </div> 
             <!-- for each -->
             <?php foreach ($tasks as $task) : ?>
                 <div class="contents-box">
@@ -69,15 +72,30 @@ $comments = $commentall->getall();
                             </form>
                         </div>
                      </div>
-                     <!-- kokoni※表示 -->
-                    <?php foreach ($comments as $comment) :?>
-                        
-                        <!-- SELECT * FROM Comment WHERE id=23 -->
-                        <div> <?= h($comment["title"]); ?>さん:: <?= h($comment["contents"]); ?></div>
-   
-                      
-                    <?php endforeach; ?>
-                
+                     <!--  -->
+                     <?php foreach ($comments as $comenntall) : ?>
+                            <?php
+                            $T = $comenntall["id"];
+                            $F = $task["id"];
+                            if ($T === $F){
+                                    echo ($TF = h($comenntall["title"]));
+                            } else {
+                                echo '';
+                            }
+                            ?>
+                        <br>
+                        <?php
+                            $T = $comenntall["id"];
+                            $F = $task["id"];
+                            if ($T === $F){
+                                    echo ($TF = h($comenntall["contents"]));
+                            } else {
+                                echo '';
+                            }
+                            ?>
+                        <br>
+                     <?php endforeach; ?>
+                     </div>
                      <!-- comment -->
                      <div class="comment-content">
                         <form action="comment-store.php" method="post">
