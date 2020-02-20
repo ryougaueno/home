@@ -9,6 +9,16 @@ $todo = new Task();
 //  echo '<pre>';
 // var_dump($tasks);die;
 
+// ここからComment
+// データの受け取り
+
+$id = $_GET['name'] ?? '';
+  
+// DBへのデータ保存
+$task = (new Task())->get($id);
+// $comment =(new Comment())->get($id);
+
+
 $comments = [
     ['name' => 'ryoga', 'body' => 'boxsing', 'thread_id' => 1],
     ['name' => 'yusuke', 'body' => 'boxsing', 'thread_id' => 1],
@@ -66,7 +76,7 @@ $comments = [
                      </div>
                      <!-- comment -->
                      <div class="comment-content">
-                        <form action="" method="post">
+                        <form action="comment-store.php" method="post">
             
                             <div class="box1">
                                 <p>＊名前</p>
@@ -78,7 +88,7 @@ $comments = [
                             </div>
                             <br>
                             <div class="comment-button">
-                                <input type="hidden" name="id" >
+                                <input type="hidden" name="id"id="comments" value="<?= h($task['id']); ?>">
                                 <button type="submit" class="btn btn-primary">とうこう</button>
                             </div>
                         </form>
