@@ -38,6 +38,10 @@ main{
   .button:hover {
     color: #666;
   }
+  /* コメントの削除ボタン    */
+  .button2{
+    text-decoration: none;
+  }
   /* 編集ボタン */
 .text-success{
     margin-right: 10px;
@@ -163,6 +167,9 @@ font-size: 2em;
     width:500px ;
     height: 150px;
 
+}
+.comment-all{
+    
 }
 .c-button{
     display: block;

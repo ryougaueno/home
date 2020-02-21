@@ -74,26 +74,29 @@ $comments = $comenntall->getAll();
                      </div>
                      <!--  -->
                      <div class="comment-all">
-                        <?php foreach ($comments as $comenntall) : ?>
-                            
-                            <?php
-                            $T = $comenntall["id"];
-                            $F = $task["id"];
-                            if ($T === $F){
-                                    echo '';
-                                    echo ($TF = h($comenntall["title"]));
-                                    echo 'さん: ';
-                                    echo ($TF = h($comenntall["contents"]));
-                            } else {
-                                echo '';
-                            }
-                            ?>
-                        
-                        <?php
-          
-                            ?>
-                        <br>
+                            <div>
+                                <?php foreach ($comments as $comenntall) : ?>
+                                    
+                                    <?php
+                                    $T = $comenntall["id"];
+                                    $F = $task["id"];
+                                    if ($T === $F){
+                                            echo '';
+                                            echo ($TF = h($comenntall["title"]));
+                                            echo 'さん: ';
+                                            echo ($TF = h($comenntall["contents"]));
+                                    } else {
+                                        echo '';
+                                    }
+                                    ?>
+                             </div><br>
                      <?php endforeach; ?>
+                     <div>
+                                <form  action="delete2.php" method="post">
+                                    <input type="hidden" name="id" value="<?= h($task['id']);?>">
+                                    <button type="submit" class="button2">コメント削除</button>
+                                </form>
+                            </div>
                      </div>
                      <!-- comment -->
                      <div class="comment-content">
